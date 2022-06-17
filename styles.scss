@@ -121,24 +121,26 @@ body {
             .presentation_link {
                 background-color: var(--primary);
                 color: var(--white);
-                padding: 1.5rem 5rem;
+                padding: 1.5rem 6rem;
                 border-radius: .5rem;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 
                 transition: ease .4s all;
                 &:hover {
                     filter: brightness(1.2);
                 }
                 
-                font-weight: var(--font-semi-bold);
-                text-transform: uppercase;
                 .presentation_link__title {
-                    font-size: 2rem;
-                    line-height: 2.4rem;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    text-transform: uppercase;
+                    font-weight: var(--font-semi-bold);
                 }
                 
                 .presentation_link__price {
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                    font-weight: var(--font-regular);
                 }
             }
 
@@ -148,7 +150,7 @@ body {
                 justify-content: center;
                 gap: .5rem 1rem;
                 flex-wrap: wrap;
-                margin: 1rem auto 2rem auto;
+                margin: 1.2rem auto 2.5rem auto;
                 
                 .presentation_list__item {
                     display: flex;
