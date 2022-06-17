@@ -138,26 +138,26 @@ body {
                 .presentation_link__price {
                     font-size: 1.2rem;
                     line-height: 1.6rem;
-                    font-weight: var(--font-regular);
+                    font-weight: var(--font-semi-bold);
                 }
             }
 
             .presentation_list {
-                width: 70%;
-                display: grid;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                gap: .5rem 1rem;
+                flex-wrap: wrap;
                 margin: 1rem auto 2rem auto;
-                grid-template-columns: 50% 50%;
-                gap: 2rem;
-
-                .presentation_list__first, .presentation_list__second {
+                
+                .presentation_list__item {
                     display: flex;
-                    flex-direction: column;
-                    gap: .5rem;
+                    align-items: center;
+                    gap: .25rem;
 
-                    .presentation_list__item {
-                        display: flex;
-                        align-items: center;
-                        gap: 1rem
+                    img {
+                        width: 15px;
+                        height: 15px;
                     }
                 }
             }
