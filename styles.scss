@@ -1,0 +1,138 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+
+    // colors
+    --primary: #0070f3;
+    --white: #fff;
+
+    // font weights
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    .safe-zone {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    strong {
+        font-weight: var(--font-bold);
+    }
+
+    .highlight {
+        color: var(--primary);
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+    .fixed_button_below {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgba($color: #0070f3, $alpha: .4);
+        backdrop-filter: blur(10px);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        display: none;
+
+
+        .fixed_button {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: .7rem 3rem;
+            border-radius: .5rem;
+            text-transform: uppercase;
+
+            transition: ease .4s all;
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+
+    }
+
+
+    .presentation {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('./assets/presentation_background.png') #eee;
+        
+
+        .safe-zone {
+            max-width: 700px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            text-align: center;
+
+
+            .presentation_title {
+                font-size: 2rem;
+                font-weight: var(--font-medium);
+                text-transform: uppercase;
+            }
+            
+            .presentation_description {
+                width: 90%;
+                font-size: 1.2rem;
+                font-weight: var(--font-regular);
+            }
+
+            .presentation_link {
+                background-color: var(--primary);
+                color: var(--white);
+                padding: 1rem 3rem;
+                border-radius: .5rem;
+
+                transition: ease .4s all;
+                &:hover {
+                    filter: brightness(1.2);
+                }
+
+                .presentation_link__title {
+                    font-size: 1.8rem;
+                    font-weight: var(--font-semi-bold);
+                }
+                
+                .presentation_link__price {
+                    font-size: 1rem;
+                    font-weight: var(--font-regular);
+                }
+            }
+        }
+    }
+}
