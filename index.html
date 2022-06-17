@@ -139,6 +139,23 @@
                 <img src="./assets/grill-blue.svg" alt="Grade azul">
             </div>
         </div>
+
+        <div class="testimonials_list__container">
+            <div class="testimonials_list__col">
+                <img src="./assets/testimonials/testmonial-01.jpg" alt="Depoimento 1">
+                <img src="./assets/testimonials/testmonial-02.jpg" alt="Depoimento 2">
+                <img src="./assets/testimonials/testmonial-03.jpg" alt="Depoimento 3">
+            </div>
+            <div class="testimonials_list__col">
+                <img src="./assets/testimonials/testmonial-04.jpg" alt="Depoimento 4">
+                <img src="./assets/testimonials/testmonial-05.jpg" alt="Depoimento 5">
+                <img src="./assets/testimonials/testmonial-08.jpg" alt="Depoimento 8">
+            </div>
+            <div class="testimonials_list__col">
+                <img src="./assets/testimonials/testmonial-06.jpg" alt="Depoimento 6">
+                <img src="./assets/testimonials/testmonial-07.jpg" alt="Depoimento 7">
+            </div>
+        </div>
     </section>
 
 
@@ -149,6 +166,28 @@
             Garanta 97,5% de desconto agora!
         </a>
     </div>
+
+
+    <script>
+        const scrollListener = () => {
+            const button = document.querySelector('.presentation_link')
+            const position = button.getBoundingClientRect().top.toFixed(0)
+
+            const fixedButton = document.querySelector('.fixed_button_below')
+
+            if(position < -100) {
+                if(fixedButton.classList.contains('active')) {
+                    return
+                } else {
+                    fixedButton.classList.add('active')
+                }
+            } else {
+                fixedButton.classList.remove('active')
+            }
+        };
+
+        window.addEventListener("scroll", scrollListener);
+    </script>
 
 </body>
 </html>

@@ -45,7 +45,7 @@ body a {
 
 body .fixed_button_below {
   position: fixed;
-  bottom: 0;
+  bottom: -250px;
   width: 100%;
   padding: 1rem;
   background-color: rgba(0, 112, 243, 0.4);
@@ -60,7 +60,12 @@ body .fixed_button_below {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
+  -webkit-transition: ease .4s all;
+  transition: ease .4s all;
+}
+
+body .fixed_button_below.active {
+  bottom: 0;
 }
 
 body .fixed_button_below .fixed_button {
@@ -69,6 +74,7 @@ body .fixed_button_below .fixed_button {
   padding: .7rem 3rem;
   border-radius: .5rem;
   text-transform: uppercase;
+  text-align: center;
   -webkit-transition: ease .4s all;
   transition: ease .4s all;
 }
@@ -76,6 +82,12 @@ body .fixed_button_below .fixed_button {
 body .fixed_button_below .fixed_button:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
+}
+
+@media (max-width: 991.98px) {
+  body .fixed_button_below .fixed_button {
+    padding: .7rem 1rem;
+  }
 }
 
 body .presentation {
@@ -361,5 +373,44 @@ body .testimonials .testimonials_title__container .testimonials_grill__container
   body .testimonials .testimonials_title__container .testimonials_grill__container {
     display: none;
   }
+}
+
+body .testimonials .testimonials_list__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  body .testimonials .testimonials_list__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body .testimonials .testimonials_list__container .testimonials_list__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+body .testimonials .testimonials_list__container .testimonials_list__col img {
+  border-radius: 1rem;
+  width: 250px;
 }
 /*# sourceMappingURL=styles.css.map */
