@@ -82,7 +82,7 @@ body .presentation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("./assets/presentation_background.png") #eee;
+  background: url("./assets/presentation_background.svg") #eee;
 }
 
 body .presentation .safe-zone {
@@ -140,9 +140,9 @@ body .presentation .safe-zone .presentation_link .presentation_link__price {
 
 body .presentation .safe-zone .presentation_list {
   width: 70%;
-  margin: 1rem auto;
   display: -ms-grid;
   display: grid;
+  margin: 1rem auto 2rem auto;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   gap: 2rem;
@@ -170,7 +170,7 @@ body .presentation .safe-zone .presentation_list .presentation_list__first .pres
 }
 
 body .foryou {
-  padding: 3rem 0;
+  padding: 5rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -211,5 +211,31 @@ body .foryou .foryou_list .foyou_list__item {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+}
+
+body .testimonials {
+  margin: 5rem auto;
+}
+
+body .testimonials .testimonials_title__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 2rem;
+}
+
+body .testimonials .testimonials_title__container .testimonials_title {
+  font-size: 2.5rem;
+  font-weight: var(--font-medium);
+}
+
+body .testimonials .testimonials_title__container .testimonials_grill__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */

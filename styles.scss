@@ -89,7 +89,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url('./assets/presentation_background.png') #eee;
+        background: url('./assets/presentation_background.svg') #eee;
         
 
         .safe-zone {
@@ -140,8 +140,8 @@ body {
 
             .presentation_list {
                 width: 70%;
-                margin: 1rem auto;
                 display: grid;
+                margin: 1rem auto 2rem auto;
                 grid-template-columns: 50% 50%;
                 gap: 2rem;
 
@@ -165,7 +165,7 @@ body {
 
 
     .foryou {
-        padding: 3rem 0;
+        padding: 5rem 0;
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 5rem;
@@ -196,6 +196,31 @@ body {
             .foyou_list__item {
                 display: flex;
                 gap: 1rem;
+            }
+        }
+    }
+
+
+
+
+
+
+    .testimonials {
+        margin: 5rem auto;
+
+        .testimonials_title__container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 2rem;
+
+            .testimonials_title {
+                font-size: 2.5rem;
+                font-weight: var(--font-medium);
+            }
+
+            .testimonials_grill__container {
+                display: flex;
+                justify-content: flex-end;
             }
         }
     }
