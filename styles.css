@@ -123,6 +123,8 @@ body .presentation .safe-zone .presentation_link {
   border-radius: .5rem;
   -webkit-transition: ease .4s all;
   transition: ease .4s all;
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
 }
 
 body .presentation .safe-zone .presentation_link:hover {
@@ -133,13 +135,11 @@ body .presentation .safe-zone .presentation_link:hover {
 body .presentation .safe-zone .presentation_link .presentation_link__title {
   font-size: 2rem;
   line-height: 2.4rem;
-  font-weight: var(--font-semi-bold);
 }
 
 body .presentation .safe-zone .presentation_link .presentation_link__price {
   font-size: 1.2rem;
   line-height: 1.6rem;
-  font-weight: var(--font-semi-bold);
 }
 
 body .presentation .safe-zone .presentation_list {

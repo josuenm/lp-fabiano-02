@@ -128,17 +128,17 @@ body {
                 &:hover {
                     filter: brightness(1.2);
                 }
-
+                
+                font-weight: var(--font-semi-bold);
+                text-transform: uppercase;
                 .presentation_link__title {
                     font-size: 2rem;
                     line-height: 2.4rem;
-                    font-weight: var(--font-semi-bold);
                 }
                 
                 .presentation_link__price {
                     font-size: 1.2rem;
                     line-height: 1.6rem;
-                    font-weight: var(--font-semi-bold);
                 }
             }
 
