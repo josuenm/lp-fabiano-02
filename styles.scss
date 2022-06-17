@@ -108,18 +108,20 @@ body {
                 font-weight: var(--font-medium);
                 text-transform: uppercase;
                 margin-top: 2rem;
+                line-height: 2.4rem;
             }
             
             .presentation_description {
                 width: 90%;
                 font-size: 1.2rem;
+                line-height: 1.6rem;
                 font-weight: var(--font-regular);
             }
 
             .presentation_link {
                 background-color: var(--primary);
                 color: var(--white);
-                padding: 1rem 3rem;
+                padding: 1.5rem 5rem;
                 border-radius: .5rem;
 
                 transition: ease .4s all;
@@ -128,12 +130,14 @@ body {
                 }
 
                 .presentation_link__title {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
                     font-weight: var(--font-semi-bold);
                 }
                 
                 .presentation_link__price {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
                     font-weight: var(--font-regular);
                 }
             }
