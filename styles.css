@@ -169,6 +169,8 @@ body .presentation .safe-zone .presentation_link:hover {
 body .presentation .safe-zone .presentation_link .presentation_link__title {
   text-transform: uppercase;
   font-weight: var(--font-semi-bold);
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 @media (max-width: 991.98px) {
