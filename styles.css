@@ -477,6 +477,9 @@ body .included .swiper .swiper-slide {
   background-size: cover;
   width: 300px;
   height: 300px;
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 body .included .swiper .swiper-slide img {
