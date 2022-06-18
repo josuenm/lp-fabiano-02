@@ -511,7 +511,6 @@ body .included .swiper .swiper-slide img {
 }
 
 body .payment {
-  padding-bottom: 15rem;
   background-color: #151515;
 }
 
@@ -701,5 +700,69 @@ body .payment .safe-zone .payment_modal .payment_methods_container p {
 body .payment .safe-zone .payment_modal .payment_methods_container img {
   width: 100%;
   opacity: .6;
+}
+
+body .garantee {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0 15rem 0;
+}
+
+@media (max-width: 991.98px) {
+  body .garantee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .garantee .garantee_image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .garantee .garantee_image_container img {
+  width: 250px;
+}
+
+body .garantee .garantee_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  body .garantee .garantee_info_container {
+    padding: 0 1rem;
+  }
+}
+
+body .garantee .garantee_info_container .garantee_info__title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: var(--font-medium);
+}
+
+body .garantee .garantee_info_container .garantee_info__description {
+  font-weight: var(--font-regular);
+  color: #7A7A7A;
 }
 /*# sourceMappingURL=styles.css.map */

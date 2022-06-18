@@ -423,6 +423,28 @@
 
 
 
+
+    <section class="garantee safe-zone">
+
+        <div class="garantee_image_container">
+            <img src="./assets/guarantee.png" alt="Garantia de 7 dias">
+        </div>
+
+        <div class="garantee_info_container">
+            <h3 class="garantee_info__title">
+                Garantia Incondicional
+            </h3>
+
+            <p class="garantee_info__description">
+                Vou te oferecer <strong>7 dias de garantia incondicional</strong>, se dentro desse prazo você perceber que o produto não é para você, pode pedir o dinheiro de volta e eu te devolvo <strong>100% do seu investimento!</strong> Eu só posso te oferecer isso, porque eu confio no meu método e sei que foi utilizado por mais de 8.000 pessoas, sempre trazendo resultados. Você não tem risco nenhum, o risco é inteiramente meu!
+            </p>
+        </div>
+
+    </section>
+
+
+
+
     <div class="fixed_button_below">
         <a href="#" class="fixed_button">
             Garanta 97,5% de desconto agora!
@@ -465,16 +487,12 @@
     <!-- Fixed Button script -->
     <script>
         const scrollListener = () => {
-            const presentationButton = document.querySelector('.presentation_link')
-            const paymentButton = document.querySelector('.payment_link')
-
-
-            const presentationPosition = presentationButton.getBoundingClientRect().top.toFixed(0)
-            const paymentPosition = paymentButton.getBoundingClientRect().bottom.toFixed(0)
+            const button = document.querySelector('.presentation_link')
+            const position = button.getBoundingClientRect().top.toFixed(0)
 
             const fixedButton = document.querySelector('.fixed_button_below')
 
-            if(presentationPosition < -100 && paymentPosition > 760) {
+            if(position < -100) {
                 if(fixedButton.classList.contains('active')) {
                     return
                 } else {
