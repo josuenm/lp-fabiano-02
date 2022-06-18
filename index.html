@@ -402,12 +402,16 @@
     <!-- Fixed Button script -->
     <script>
         const scrollListener = () => {
-            const button = document.querySelector('.presentation_link')
-            const position = button.getBoundingClientRect().top.toFixed(0)
+            const presentationButton = document.querySelector('.presentation_link')
+            const paymentButton = document.querySelector('.payment_link')
+
+
+            const presentationPosition = presentationButton.getBoundingClientRect().top.toFixed(0)
+            const paymentPosition = paymentButton.getBoundingClientRect().bottom.toFixed(0)
 
             const fixedButton = document.querySelector('.fixed_button_below')
 
-            if(position < -100) {
+            if(presentationPosition < -100 && paymentPosition > 760) {
                 if(fixedButton.classList.contains('active')) {
                     return
                 } else {
