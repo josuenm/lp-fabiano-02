@@ -445,6 +445,58 @@
 
 
 
+    <section class="faq safe-zone">
+
+        <h2 class="faq_title">
+            Perguntas Frequentes
+        </h2>
+
+        <div class="faq_modal">
+            <div class="faq_modal_item">
+                <div class="faq_modal_header">
+                    <div class="faq_modal_header__drop-down">
+                        <img src="./assets/arrow-drop-down.svg" alt="">
+                    </div>
+                    <span>Oque vai incluir no curso?</span>
+                </div>
+
+                <p class="faq_modal_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi aperiam cum delectus magni officia exercitationem est ab minus laboriosam quas, qui quisquam velit optio placeat eius voluptatum beatae magnam.
+                </p>
+            </div>
+            
+            <div class="faq_modal_item">
+                <div class="faq_modal_header">
+                    <div class="faq_modal_header__drop-down">
+                        <img src="./assets/arrow-drop-down.svg" alt="">
+                    </div>
+                    <span>Oque vai incluir no curso?</span>
+                </div>
+
+                <p class="faq_modal_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi aperiam cum delectus magni officia exercitationem est ab minus laboriosam quas, qui quisquam velit optio placeat eius voluptatum beatae magnam.
+                </p>
+            </div>
+
+            <div class="faq_modal_item">
+                <div class="faq_modal_header">
+                    <div class="faq_modal_header__drop-down">
+                        <img src="./assets/arrow-drop-down.svg" alt="">
+                    </div>
+                    <span>Oque vai incluir no curso?</span>
+                </div>
+
+                <p class="faq_modal_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi aperiam cum delectus magni officia exercitationem est ab minus laboriosam quas, qui quisquam velit optio placeat eius voluptatum beatae magnam.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
     <div class="fixed_button_below">
         <a href="#" class="fixed_button">
             Garanta 97,5% de desconto agora!
@@ -507,6 +559,7 @@
     </script>
 
 
+    <!-- Timer script -->
     <script>
 
         const hoursElement = document.querySelector('#hours')
@@ -554,6 +607,19 @@
 
     </script>
 
+
+    <!-- FAQ script -->
+    <script>
+
+        const faqQuestions = document.querySelectorAll('.faq_modal_item')
+
+        faqQuestions.forEach((item) => {
+            item.addEventListener('click', ({ target }) => {
+                target.classList.toggle('active')
+            })
+        })
+
+    </script>
 
 </body>
 </html>

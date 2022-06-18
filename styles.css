@@ -710,7 +710,7 @@ body .garantee {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 0 15rem 0;
+  padding: 3rem 0;
 }
 
 @media (max-width: 991.98px) {
@@ -764,5 +764,96 @@ body .garantee .garantee_info_container .garantee_info__title {
 body .garantee .garantee_info_container .garantee_info__description {
   font-weight: var(--font-regular);
   color: #7A7A7A;
+}
+
+body .faq {
+  padding: 3rem 0 15rem 0;
+}
+
+@media (max-width: 991.98px) {
+  body .faq {
+    padding: 3rem .5rem 15rem .5rem;
+  }
+}
+
+body .faq .faq_title {
+  width: 40%;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  font-weight: var(--font-bold);
+  color: #151515;
+}
+
+body .faq .faq_modal {
+  margin-top: 2rem;
+}
+
+body .faq .faq_modal .faq_modal_item {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+body .faq .faq_modal .faq_modal_item .faq_modal_header {
+  color: #151515;
+  font-size: 1.1rem;
+  font-weight: var(--font-medium);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  margin-top: 1rem;
+}
+
+body .faq .faq_modal .faq_modal_item .faq_modal_header span {
+  -webkit-transition: ease .4s all;
+  transition: ease .4s all;
+}
+
+body .faq .faq_modal .faq_modal_item .faq_modal_header .faq_modal_header__drop-down {
+  background-color: #151515;
+  -webkit-mask: url(./assets/arrow-drop-down.svg) no-repeat center;
+  mask: url(./assets/arrow-drop-down.svg) no-repeat center;
+  background-size: cover;
+  -webkit-transition: ease .4s all;
+  transition: ease .4s all;
+  pointer-events: none;
+}
+
+body .faq .faq_modal .faq_modal_item .faq_modal_header .faq_modal_header__drop-down img {
+  opacity: 0;
+}
+
+body .faq .faq_modal .faq_modal_item .faq_modal_description {
+  font-weight: var(--font-regular);
+  color: #7A7A7A;
+  -webkit-transition: ease .4s all;
+  transition: ease .4s all;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: .5rem 0;
+  transition: ease .4s all;
+  pointer-events: none;
+}
+
+body .faq .faq_modal .faq_modal_item.active .faq_modal_header {
+  color: var(--primary);
+}
+
+body .faq .faq_modal .faq_modal_item.active .faq_modal_header .faq_modal_header__drop-down {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: var(--primary);
+}
+
+body .faq .faq_modal .faq_modal_item.active .faq_modal_description {
+  max-height: 300px;
+}
+
+body .faq .faq_modal .faq_modal_item.active .faq_modal_description {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=styles.css.map */
