@@ -45,6 +45,7 @@ body a {
 
 body .fixed_button_below {
   position: fixed;
+  z-index: 99;
   bottom: -250px;
   width: 100%;
   padding: 1rem;
@@ -463,5 +464,23 @@ body .included .included_title__container .included_grill__container {
   body .included .included_title__container .included_grill__container {
     display: none;
   }
+}
+
+body .included .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+body .included .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+body .included .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
