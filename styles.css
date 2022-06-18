@@ -431,6 +431,7 @@ body .included .included_title__container {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 991.98px) {
@@ -469,7 +470,7 @@ body .included .included_title__container .included_grill__container {
 body .included .included_title {
   text-align: center;
   font-size: 2.2rem;
-  margin: 5rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 body .included .swiper {
