@@ -344,7 +344,10 @@
                 <a href="#" class="payment_link">
                     <p class="payment_link__title">Aproveitar o desconto de 92%</p>
                     <p class="payment_link__price">
-                        Essa promoção termina em 7h 26min e 55seg
+                        Essa promoção termina em 
+                        <span id="hours">0</span>h 
+                        <span id="minutes">00</span>min e 
+                        <span id="seconds">00</span>seg
                     </p>
                 </a>
 
@@ -424,6 +427,48 @@
 
         window.addEventListener("scroll", scrollListener);
     </script>
+
+
+    <script>
+
+        const hoursElement = document.querySelector('#hours')
+        const minutesElement = document.querySelector('#minutes')
+        const secondsElement = document.querySelector('#seconds')
+
+        const localTimer = JSON.parse(localStorage.getItem('pacote-de-moldes.timer'))
+
+        let hours = localTimer !== null ? 7 : localTimer.hours
+        let minutes = localTimer !== null ? 55 : localTimer.minutes
+        let seconds = localTimer !== null ? 59 : localTimer.seconds
+
+        const timer = setInterval(() => {
+            
+            if(hours !== 0 && minutes !== 0 && seconds !== 0)
+            seconds--
+
+            if(seconds < 0) {
+                minutes--
+                seconds = 59
+            }
+
+            if(minutes < 0) {
+                hours--
+                minutes = 59
+            }
+
+            hoursElement.innerHTML = hours
+            minutesElement.innerHTML = minutes
+            secondsElement.innerHTML = seconds
+
+            localStorage.setItem('pacote-de-moldes.timer', JSON.stringify({
+                hours: hours,
+                minutes: minutes,
+                seconds: seconds
+            }))
+        }, 1000)
+
+    </script>
+
 
 </body>
 </html>
