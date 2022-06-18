@@ -343,8 +343,36 @@
 
                 <div class="payment_list">
                     <div class="payment_item">
-                        <!-- <img src="./assets/successful-without-bg.svg" alt="Positivo"> -->
-
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Acesso Completo e Imediato</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Grupo no Whatsapp</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Moldes Atualizados</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Vestidos</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Jaquetas</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Casacos</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Calças</span>
+                    </div>
+                    <div class="payment_item">
+                        <img src="./assets/successful-without-bg.svg" alt="Positivo">
+                        <span>Social</span>
                     </div>
                 </div>
 
@@ -444,9 +472,9 @@
 
         const localTimer = JSON.parse(localStorage.getItem('pacote-de-moldes.timer'))
 
-        let hours = localTimer !== null ? 7 : localTimer.hours
-        let minutes = localTimer !== null ? 55 : localTimer.minutes
-        let seconds = localTimer !== null ? 59 : localTimer.seconds
+        let hours = !!localTimer ? 7 : localTimer.hours
+        let minutes = !!localTimer ? 55 : localTimer.minutes
+        let seconds = !!localTimer ? 59 : localTimer.seconds
 
         const timer = setInterval(() => {
             
