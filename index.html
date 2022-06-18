@@ -341,6 +341,13 @@
                     <p class="payment_modal__price">R$7,00</p>
                 </div>
 
+                <div class="payment_list">
+                    <div class="payment_item">
+                        <!-- <img src="./assets/successful-without-bg.svg" alt="Positivo"> -->
+
+                    </div>
+                </div>
+
                 <a href="#" class="payment_link">
                     <p class="payment_link__title">Aproveitar o desconto de 92%</p>
                     <p class="payment_link__price">
@@ -443,28 +450,29 @@
 
         const timer = setInterval(() => {
             
-            if(hours !== 0 && minutes !== 0 && seconds !== 0)
-            seconds--
-
-            if(seconds < 0) {
-                minutes--
-                seconds = 59
+            if(hours !== 0 && minutes !== 0 && seconds !== 0) {
+                seconds--
+    
+                if(seconds < 0) {
+                    minutes--
+                    seconds = 59
+                }
+    
+                if(minutes < 0) {
+                    hours--
+                    minutes = 59
+                }
+    
+                hoursElement.innerHTML = hours
+                minutesElement.innerHTML = minutes
+                secondsElement.innerHTML = seconds
+    
+                localStorage.setItem('pacote-de-moldes.timer', JSON.stringify({
+                    hours: hours,
+                    minutes: minutes,
+                    seconds: seconds
+                }))
             }
-
-            if(minutes < 0) {
-                hours--
-                minutes = 59
-            }
-
-            hoursElement.innerHTML = hours
-            minutesElement.innerHTML = minutes
-            secondsElement.innerHTML = seconds
-
-            localStorage.setItem('pacote-de-moldes.timer', JSON.stringify({
-                hours: hours,
-                minutes: minutes,
-                seconds: seconds
-            }))
         }, 1000)
 
     </script>
