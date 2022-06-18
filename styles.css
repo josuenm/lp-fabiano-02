@@ -466,6 +466,12 @@ body .included .included_title__container .included_grill__container {
   }
 }
 
+body .included .included_title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 5rem 0 0 0;
+}
+
 body .included .swiper {
   width: 100%;
   padding-top: 50px;
