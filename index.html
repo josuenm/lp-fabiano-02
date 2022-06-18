@@ -472,9 +472,9 @@
 
         const localTimer = JSON.parse(localStorage.getItem('pacote-de-moldes.timer'))
 
-        let hours = !!localTimer ? 7 : localTimer.hours
-        let minutes = !!localTimer ? 55 : localTimer.minutes
-        let seconds = !!localTimer ? 59 : localTimer.seconds
+        let hours = !!localTimer ? localTimer.hours : 7
+        let minutes = !!localTimer ? localTimer.minutes : 55
+        let seconds = !!localTimer ? localTimer.seconds : 59
 
         const timer = setInterval(() => {
             
