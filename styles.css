@@ -492,4 +492,16 @@ body .included .swiper .swiper-slide img {
   display: block;
   width: 100%;
 }
+
+@media (max-width: 575.98px) {
+  body .included .swiper .swiper-button-next::after {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .included .swiper .swiper-button-prev::after {
+    margin-left: 90px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

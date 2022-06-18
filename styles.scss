@@ -401,6 +401,17 @@ body {
                     width: 100%;
                 }
             }
+
+            .swiper-button-next::after {
+                @media (max-width: 575.98px) {
+                    margin-right: 90px;
+                }
+            }
+            .swiper-button-prev::after {
+                @media (max-width: 575.98px) {
+                    margin-left: 90px;
+                }
+            }
         }
     }
 }
