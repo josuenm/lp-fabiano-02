@@ -497,6 +497,10 @@
 
         const localTimer = JSON.parse(localStorage.getItem('pacote-de-moldes.timer'))
 
+        if(!!localTimer === false) {
+            localStorage.removeItem('pacote-de-moldes.timer')
+        }
+
         let hours = !!localTimer ? localTimer.hours : 7
         let minutes = !!localTimer ? localTimer.minutes : 55
         let seconds = !!localTimer ? localTimer.seconds : 59
@@ -527,6 +531,8 @@
                 }))
             }
         }, 1000)
+
+        timer()
 
     </script>
 
