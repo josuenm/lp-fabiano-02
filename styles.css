@@ -341,6 +341,7 @@ body .testimonials .testimonials_title__container {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 991.98px) {
@@ -352,6 +353,7 @@ body .testimonials .testimonials_title__container {
 body .testimonials .testimonials_title__container .testimonials_title {
   font-size: 2.5rem;
   font-weight: var(--font-medium);
+  margin: auto 0;
 }
 
 @media (max-width: 991.98px) {
@@ -442,7 +444,9 @@ body .included .included_title__container {
 
 body .included .included_title__container .included_title {
   font-size: 2.5rem;
+  line-height: 2.9rem;
   font-weight: var(--font-medium);
+  margin: auto 0;
 }
 
 @media (max-width: 991.98px) {

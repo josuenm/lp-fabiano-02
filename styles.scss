@@ -285,6 +285,7 @@ body {
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 2rem;
+            margin-bottom: 3rem;
 
             @media (max-width: 991.98px) {
                 display: block;
@@ -293,6 +294,7 @@ body {
             .testimonials_title {
                 font-size: 2.5rem;
                 font-weight: var(--font-medium);
+                margin: auto 0;
 
                 @media (max-width: 991.98px) {
                     font-size: 1.6rem;
@@ -357,7 +359,9 @@ body {
 
             .included_title {
                 font-size: 2.5rem;
+                line-height: 2.9rem;
                 font-weight: var(--font-medium);
+                margin: auto 0;
 
                 @media (max-width: 991.98px) {
                     font-size: 1.6rem;
