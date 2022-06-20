@@ -116,7 +116,7 @@ body .presentation .safe-zone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   text-align: center;
 }
 
@@ -216,7 +216,7 @@ body .presentation .safe-zone .presentation_list {
   gap: .5rem 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 1.2rem auto 2.5rem auto;
+  margin: 0 auto 2.5rem auto;
 }
 
 @media (max-width: 991.98px) {
