@@ -130,7 +130,7 @@ body .presentation .safe-zone .presentation_title {
   font-size: 2rem;
   font-weight: var(--font-medium);
   margin-top: 2rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
 }
 
 @media (max-width: 991.98px) {
