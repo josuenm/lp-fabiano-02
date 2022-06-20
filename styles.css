@@ -765,7 +765,7 @@ body .garantee .garantee_info_container .garantee_info__description {
 }
 
 body .faq {
-  padding: 3rem 0;
+  padding: 3rem 0 3rem 3rem;
 }
 
 body .faq .faq_title {
