@@ -331,7 +331,7 @@
                 Poderíamos facilmente te cobrar R$97,00 porém...
             </h2>
             <p class="payment_subtitle">
-                Somente hoje você terá um desconto diferenciado de 97,5%
+                Somente nos dias: <span class="two-days-ago"></span>, <span class="one-day-ago"></span> e  <span class="current-date"></span> você terá um desconto diferenciado de 97,5%
             </p>
 
 
@@ -641,9 +641,38 @@
             }
         }, 1000)
 
-        timer()
-
     </script>
+
+
+
+    <script>
+        let months = [
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho',
+            'Julho',
+            'Agosto',
+            'Setembro',
+            'Outubro',
+            'Novembro',
+            'Dezembro'
+        ]
+
+        let getDate = new Date()
+
+        let currentDay = getDate.getDate()
+
+        let oneDayAgo = new Date(getDate.getFullYear(), getDate.getMonth(), currentDay - 1).getDate()
+        let twoDaysAgo = new Date(getDate.getFullYear(), getDate.getMonth(), currentDay - 2).getDate()
+
+        document.querySelector('.one-day-ago').innerHTML = `${oneDayAgo}`
+        document.querySelector('.two-days-ago').innerHTML = `${twoDaysAgo}`
+        document.querySelector('.current-date').innerHTML = `${currentDay} de ${months[getDate.getMonth()]}`
+    </script>
+
 
 
     <!-- FAQ script -->
