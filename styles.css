@@ -248,7 +248,7 @@ body .presentation .safe-zone .presentation_list .presentation_list__item img {
 }
 
 body .foryou {
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
