@@ -676,7 +676,7 @@ body {
                     margin: 0;
                     overflow: hidden;
                     margin: .5rem 0;
-                    transition: ease .4s all;
+                    transition: linear .4s all;
                     pointer-events: none;
                 }
 
@@ -699,6 +699,28 @@ body {
                     }
                 }
             }
+        }
+    }
+
+
+
+    footer {
+        padding: 3rem 1rem 8rem 1rem;
+        background-color: #121212;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        p {
+            width: 60%;
+            margin: 0 auto;
+            color: #555555;
+            text-align: center;
+        }
+
+        .footer_copy {
+            font-size: .9rem;
         }
     }
 }
