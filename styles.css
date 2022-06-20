@@ -129,7 +129,6 @@ body .presentation .safe-zone {
 body .presentation .safe-zone .presentation_title {
   font-size: 2rem;
   font-weight: var(--font-medium);
-  text-transform: uppercase;
   margin-top: 2rem;
   line-height: 2.4rem;
 }
