@@ -40,9 +40,7 @@
             <a href="#" class="presentation_link">
                 <p class="presentation_link__title">Garanta seus moldes</p>
                 <p class="presentation_link__price">
-                    Por Apenas R$7,00 à vista (Somente <span class="presentation_two-days-ago"></span>, 
-                    <span class="presentation_one-day-ago"></span> e 
-                    <span class="presentation_current-date"></span>)
+                    Por Apenas R$7,00 à vista (Somente dia <span class="presentation_current-date"></span>)
                 </p>
             </a>
 
@@ -677,8 +675,6 @@
         document.querySelector('.payment_two-days-ago').innerHTML = `${twoDaysAgo}`
         document.querySelector('.payment_current-date').innerHTML = `${currentDay} de ${months[getDate.getMonth()]}`
 
-        document.querySelector('.presentation_one-day-ago').innerHTML = `${oneDayAgo}`
-        document.querySelector('.presentation_two-days-ago').innerHTML = `${twoDaysAgo}`
         document.querySelector('.presentation_current-date').innerHTML = `${currentDay} de ${months[getDate.getMonth()]}`
     </script>
 
