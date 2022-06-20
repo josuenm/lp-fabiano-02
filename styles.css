@@ -769,12 +769,6 @@ body .faq {
   padding: 3rem 0;
 }
 
-@media (max-width: 991.98px) {
-  body .faq {
-    padding: 3rem .5rem 15rem .5rem;
-  }
-}
-
 body .faq .faq_title {
   width: 40%;
   font-size: 2.5rem;
@@ -837,6 +831,12 @@ body .faq .faq_modal .faq_modal_item .faq_modal_description {
   -webkit-transition: linear .4s all;
   transition: linear .4s all;
   pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+  body .faq .faq_modal .faq_modal_item .faq_modal_description {
+    padding: 0 1rem;
+  }
 }
 
 body .faq .faq_modal .faq_modal_item.active .faq_modal_header {
