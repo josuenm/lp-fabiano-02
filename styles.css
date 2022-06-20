@@ -331,7 +331,7 @@ body .foryou .foryou_list_item__container .foryou_list .foyou_list__item {
 }
 
 body .testimonials {
-  margin: 0 auto 5rem auto;
+  margin: 0 auto;
 }
 
 body .testimonials .testimonials_title__container {
@@ -423,6 +423,7 @@ body .testimonials .testimonials_list__container .testimonials_list__col img {
 }
 
 body .included {
+  padding-top: 9rem;
   padding-bottom: 2rem;
 }
 
