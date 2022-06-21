@@ -430,7 +430,7 @@ body .included {
 
 @media (max-width: 991.98px) {
   body .included {
-    padding-top: 5.5rem;
+    padding-top: 4.5rem;
   }
 }
 
@@ -446,6 +446,7 @@ body .included .included_title__container {
 @media (max-width: 991.98px) {
   body .included .included_title__container {
     display: block;
+    margin-bottom: 2rem;
   }
 }
 
