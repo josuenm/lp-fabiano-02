@@ -428,6 +428,12 @@ body .included {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 991.98px) {
+  body .included {
+    padding-top: 3.5rem;
+  }
+}
+
 body .included .included_title__container {
   display: -ms-grid;
   display: grid;
@@ -452,6 +458,7 @@ body .included .included_title__container .included_title {
 @media (max-width: 991.98px) {
   body .included .included_title__container .included_title {
     font-size: 1.6rem;
+    line-height: 2rem;
     text-align: center;
   }
 }
