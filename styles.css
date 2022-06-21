@@ -767,6 +767,7 @@ body .garantee .garantee_info_container {
 @media (max-width: 991.98px) {
   body .garantee .garantee_info_container {
     padding: 0 1rem;
+    text-align: center;
   }
 }
 
@@ -786,7 +787,7 @@ body .faq {
 
 @media (max-width: 991.98px) {
   body .faq {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
 }
 
