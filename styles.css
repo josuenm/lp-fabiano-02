@@ -577,6 +577,7 @@ body .payment .safe-zone .payment_modal {
   body .payment .safe-zone .payment_modal {
     max-width: 100%;
     width: 90%;
+    padding: 2rem 1rem;
   }
 }
 
