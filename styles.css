@@ -269,6 +269,7 @@ body .foryou {
         -ms-flex-align: center;
             align-items: center;
     gap: 4rem;
+    padding: 2rem 0 3rem 0;
   }
 }
 
