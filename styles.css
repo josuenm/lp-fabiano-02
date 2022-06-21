@@ -200,8 +200,8 @@ body .presentation .safe-zone .presentation_link .presentation_link__price {
 
 @media (max-width: 991.98px) {
   body .presentation .safe-zone .presentation_link .presentation_link__price {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: .9rem;
+    line-height: 1.3rem;
   }
 }
 
