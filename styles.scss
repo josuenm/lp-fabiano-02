@@ -396,6 +396,10 @@ body {
             width: 100%;
             padding-top: 50px;
             padding-bottom: 50px;
+
+            @media (max-width: 991.98px) {
+                padding-top: 25px;
+            }
         
             .swiper-slide {
                 background-position: center;

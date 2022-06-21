@@ -490,6 +490,12 @@ body .included .swiper {
   padding-bottom: 50px;
 }
 
+@media (max-width: 991.98px) {
+  body .included .swiper {
+    padding-top: 25px;
+  }
+}
+
 body .included .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
