@@ -670,7 +670,7 @@ body .payment .safe-zone .payment_modal .payment_link:hover {
 @media (max-width: 991.98px) {
   body .payment .safe-zone .payment_modal .payment_link {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem .5rem;
   }
 }
 
@@ -691,6 +691,13 @@ body .payment .safe-zone .payment_modal .payment_link .payment_link__title {
 body .payment .safe-zone .payment_modal .payment_link .payment_link__price {
   font-size: .8rem;
   line-height: 1.4rem;
+}
+
+@media (max-width: 991.98px) {
+  body .payment .safe-zone .payment_modal .payment_link .payment_link__price {
+    font-size: .7rem;
+    line-height: 1.3rem;
+  }
 }
 
 body .payment .safe-zone .payment_modal .payment_methods_container {
