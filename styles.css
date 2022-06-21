@@ -900,6 +900,12 @@ body footer p {
   font-size: .9rem;
 }
 
+@media (max-width: 991.98px) {
+  body footer p {
+    width: 100%;
+  }
+}
+
 body footer .footer_copy {
   font-size: .9rem;
 }
